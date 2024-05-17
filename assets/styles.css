@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  --borderRadius: 1.5rem;
+  --contentContainerBGColor: rgb(217, 217, 217, 0.25);
+}
+
+body {
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.form-container {
+  border: solid black;
+  padding: 1rem 1rem 1rem;
+  background-color: var(--contentContainerBGColor);
+  font-size: 1.3rem;
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+}
+
+.information-container {
+  border: solid black;
+  /* display: none; */
+  height: 20rem;
+  margin-top: 0.6rem;
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  background-color: var(--contentContainerBGColor);
+}
+
+#form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* input box */
+#city {
+  height: 30px;
+  background-color: rgb(230, 230, 230, 0);
+  font-size: 1rem;
+  text-align: center;
+  border: solid black;
+  border-radius: 0.5rem;
+}
+
+#city:focus {
+  outline: solid black;
+  outline-width: 0.1rem;
+}
+
+#submit-button {
+  background-color: rgb(128, 173, 200);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  border: solid;
+}
+
+#submit-button:hover {
+  background-color: rgb(146, 183, 208);
+}
+
+#submit-button:active {
+  background-color: rgb(128, 173, 200);
+}
