@@ -13,10 +13,41 @@
         <form id="form">
           <label for="city">Location</label>
           <input id="city" name="city" required />
-          <button type="button" id="submit-button">Go!</button>
+          <button type="submit" id="submit-button">Go!</button>
         </form>
       </div>
-      <div class="information-container"></div>
+      <div class="information-container">
+        <div id="info-details-container">
+          <div id="info-fields">
+            <p class="info-tag">Condition:</p>
+            <p class="info-tag">Name:</p>
+            <p class="info-tag">Region:</p>
+            <p class="info-tag">Country:</p>
+            <p class="info-tag">Temperature:</p>
+            <p class="info-tag">Feels Like:</p>
+            <p class="info-tag">Wind Speed:</p>
+            <p class="info-tag">Wind Direction:</p>
+            <p class="info-tag">Humidity:</p>
+            <p class="info-tag">Precipitation:</p>
+          </div>
+          <div id="info-values">
+            <p class="info-tag" id="condition"></p>
+            <p class="info-tag" id="name"></p>
+            <p class="info-tag" id="region"></p>
+            <p class="info-tag" id="country"></p>
+            <p class="info-tag" id="temp"></p>
+            <p class="info-tag" id="feelsLike"></p>
+            <p class="info-tag" id="windSpeed"></p>
+            <p class="info-tag" id="windDirection"></p>
+            <p class="info-tag" id="humidity"></p>
+            <p class="info-tag" id="precipitation"></p>
+          </div>
+        </div>
+
+        <div class="info-tag" id="toggle-button-container">
+          <button id="toggle-button" state="c">Toggle (&deg;C/&deg;F)</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

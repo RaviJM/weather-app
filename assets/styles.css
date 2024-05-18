@@ -4,6 +4,7 @@
   padding: 0px;
   --borderRadius: 1.5rem;
   --contentContainerBGColor: rgb(217, 217, 217, 0.25);
+  --informationContainerPadding: 1rem;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
   width: 25rem;
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 3.1rem;
 }
 
 .form-container {
@@ -32,11 +33,14 @@ body {
 .information-container {
   border: solid black;
   /* display: none; */
-  height: 20rem;
+  height: 24rem;
   margin-top: 0.6rem;
   border-bottom-left-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
   background-color: var(--contentContainerBGColor);
+  font-size: 1.3rem;
+  position: relative;
+  padding: var(--informationContainerPadding);
 }
 
 #form {
@@ -60,7 +64,8 @@ body {
   outline-width: 0.1rem;
 }
 
-#submit-button {
+#submit-button,
+#toggle-button {
   background-color: rgb(128, 173, 200);
   border-radius: 0.5rem;
   padding: 0.6rem 0.8rem 0.6rem 0.8rem;
@@ -68,10 +73,42 @@ body {
   border: solid;
 }
 
-#submit-button:hover {
+#submit-button:hover,
+#toggle-button:hover {
   background-color: rgb(146, 183, 208);
 }
 
-#submit-button:active {
+#submit-button:active,
+#toggle-button:active {
   background-color: rgb(128, 173, 200);
+}
+
+#toggle-button-container {
+  position: absolute;
+  bottom: var(--informationContainerPadding);
+  right: var(--informationContainerPadding);
+  background-color: rgb(230, 230, 230, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#toggle-button {
+  height: 2.6rem;
+  width: 8rem;
+}
+
+.info-tag {
+  margin-top: 0.4rem;
+}
+
+#info-details-container {
+  display: flex;
+}
+
+#info-fields {
+  flex: 1;
+}
+
+#info-values {
+  flex: 1;
 }
